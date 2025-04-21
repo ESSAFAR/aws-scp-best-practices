@@ -1,0 +1,15 @@
+{
+    "Version":"2012-10-17",
+    "Statement":[
+       {
+          "Effect":"Deny",
+          "Action":"iam:DeleteRole",
+          "Resource":"arn:aws:iam::*:role/aws-service-role/*"
+       },
+       {
+          "Effect":"Deny",
+          "Action":"iam:DetachRolePolicy",
+          "Resource":"arn:aws:iam::*:role/aws-service-role/*"
+       }
+    ]
+ }
